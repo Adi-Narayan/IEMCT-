@@ -2,36 +2,54 @@ print("Which operation do you need to perform \n")
 print(" Addition (+)\n Subtraction (-)\n Multiplication (*)\n Division (/)\n Modulus (%)\n Exponent (**)\n")
 ch = input()
 
-if ch == '+':
+def add():
     print("Enter the numebrs to be added")
     a = int(input())
     b = int(input())
     print(a + b)
-elif ch == '-':
-    print("Enter the numebrs to be subtracted")
+
+def sub():
+    print("Enter the numebers to be subtracted")
     a = int(input())
     b = int(input())
     print(a - b)
-elif ch == '*':
-    print("Enter the numebrs to be multiplied")
+
+def mul():
+    print("Enter the numebers to be multiplied")
     a = int(input())
     b = int(input())
     print(a * b)
-elif ch == '/':
-    print("Enter the numebrs to be divided")
+
+def div():
+    print("Enter the numebers to be divided")
     a = int(input())
     b = int(input())
     print(a / b)
-elif ch == '%':
-    print("Enter the numebrs for which the modulus operation is to be performed")
+
+def mod():
+    print("Enter numebers for which the modulus operation is to be performed")
     a = int(input())
     b = int(input())
     print(a % b)
-elif ch == '**':
+
+def exp():
     print("Enter the root and the power")
     a = int(input())
     b = int(input())
     print(a**b)
+
+if ch == '+':
+    add()
+elif ch == '-':
+    sub()
+elif ch == '*':
+    mul()
+elif ch == '/':
+    div()
+elif ch == '%':
+    mod()
+elif ch == '**':
+   exp()
 else:
     print("Invalid Input")
  
